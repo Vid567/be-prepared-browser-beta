@@ -1,226 +1,120 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#14365e">
-  <title>Be Prepared Content Creator</title>
-  <meta name="description" content="Ready-to-use social posts for Be Prepared, a local-first 5Q continuity map.">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .creator-shell{max-width:1180px;margin:auto;padding:44px 28px 90px}
-    .creator-hero{background:linear-gradient(135deg,#102541,#14365e 72%,#245c91);color:white;border-radius:26px;padding:clamp(28px,5vw,54px);display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:end;box-shadow:0 18px 45px rgba(20,54,94,.22)}
-    .creator-hero h1{color:white;font-size:clamp(38px,6vw,68px);max-width:760px}
-    .creator-hero .lead{color:#dbeaf6}
-    .creator-hero a{color:white}
-    .creator-card{background:white;border:1px solid var(--line);border-radius:14px;padding:22px}
-    .creator-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
-    .post-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
-    .post-card{background:white;border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px}
-    .post-card h3{font-size:18px}
-    .post-text{white-space:pre-wrap;color:var(--ink);line-height:1.55;background:#f7fafc;border:1px solid var(--line);border-radius:10px;padding:14px;min-height:190px}
-    .post-meta{display:flex;justify-content:space-between;gap:10px;align-items:center;color:var(--muted);font-size:12px}
-    .copy-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
-    .pill-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-    .pill-list span{background:#eef5fb;color:#14365e;border:1px solid #d2e2ef;border-radius:99px;padding:7px 10px;font-size:12px;font-weight:750}
-    .section-gap{margin-top:42px}
-    .mini-copy{white-space:pre-wrap;line-height:1.55}
-    .toplink{display:inline-flex;align-items:center;gap:8px;color:white;text-decoration:none;font-weight:800;margin-bottom:22px}
-    @media(max-width:900px){.creator-hero,.creator-grid,.post-grid{grid-template-columns:1fr}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#14365e">
+<title>Be Prepared Content Creator</title>
+<meta name="description" content="Plan, copy and track 50 English Be Prepared awareness posts.">
+<style>
+:root{--brand:#14365e;--brand-dark:#0e2948;--brand-light:#e7f2f8;--blue:#41b6e6;--success:#059669;--success-light:#d1fae5;--bg:#f6f8fb;--surface:#fff;--text:#1c1917;--muted:#78716c;--border:#dce5ed;--danger:#b91c1c}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}.wrap{max-width:1100px;margin:auto;padding:20px}.top{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:22px}.brand{font-size:22px;font-weight:800;color:var(--brand)}.sub{color:var(--muted);font-size:14px}.top-actions{display:flex;gap:8px;flex-wrap:wrap}.panel{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px;margin-bottom:18px}.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;align-items:end}label{font-size:13px;font-weight:700;display:block;margin-bottom:6px}select,input,button{font:inherit}select,input{width:100%;padding:11px;border:1px solid var(--border);border-radius:10px;background:#fff}.btn{border:0;border-radius:10px;padding:11px 15px;font-weight:700;cursor:pointer;text-decoration:none;text-align:center}.primary{background:var(--brand);color:#fff}.primary:hover{background:var(--brand-dark)}.secondary{background:var(--brand-light);color:var(--brand)}.ghost{background:#fff;border:1px solid var(--border)}.danger{color:var(--danger)}.stats{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-top:12px}.progress{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}.progress strong{background:var(--brand-light);color:var(--brand);padding:8px 11px;border-radius:9px;font-size:13px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:14px}.card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:12px}.card-head{display:flex;justify-content:space-between;gap:10px;align-items:center}.number{font-weight:800;color:var(--brand)}.theme{font-size:12px;background:var(--brand-light);color:var(--brand);padding:4px 8px;border-radius:999px}.post{white-space:pre-wrap;background:#fbfcfe;border:1px solid var(--border);border-radius:10px;padding:13px;min-height:255px;font-size:15px}.actions{display:flex;gap:8px;flex-wrap:wrap}.actions button{flex:1;min-width:86px}.scheduled{box-shadow:inset 0 0 0 1px var(--blue)}.processed{border-color:var(--success);box-shadow:0 0 0 2px var(--success-light)}.processed .processed-btn{background:var(--success);color:#fff}.planner{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;border-bottom:1px solid var(--border);padding:10px}th{color:var(--muted)}.empty{color:var(--muted);text-align:center;padding:25px}.status-toggle{display:flex;align-items:center;gap:8px;min-height:43px;margin:0}.status-toggle input{width:auto}.notice{font-size:13px;color:var(--muted);margin-top:10px}.toast{position:fixed;right:20px;bottom:20px;background:#111;color:#fff;padding:11px 15px;border-radius:10px;opacity:0;pointer-events:none;transition:.2s}.toast.show{opacity:1}@media(max-width:650px){.top{align-items:flex-start;flex-direction:column}.wrap{padding:14px}.post{min-height:auto}.grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-  <main class="creator-shell">
-    <section class="creator-hero">
-      <div>
-        <a class="toplink" href="index.html">BP Be Prepared</a>
-        <div class="eyebrow light">Content creator</div>
-        <h1>Posts for the 5Q continuity map.</h1>
-        <p class="lead">Use these short posts to introduce Be Prepared: a local-first way to help trusted people find important information without storing secrets.</p>
-        <div class="hero-actions">
-          <a class="btn demo-light" href="index.html">Open prototype</a>
-          <button class="btn primary" data-copy="#main-link">Copy app link</button>
-        </div>
-        <p id="main-link" hidden>https://vid567.github.io/be-prepared-browser-beta/</p>
-      </div>
-      <aside class="creator-card">
-        <h2>Core message</h2>
-        <p class="muted">Be Prepared records directions, not secrets. It uses five questions: what exists, where it is, who handles it, who else knows, and when it was last checked.</p>
-        <div class="pill-list">
-          <span>5Q map</span>
-          <span>Local-first</span>
-          <span>No passwords</span>
-          <span>No document vault</span>
-          <span>Continuity map</span>
-        </div>
-      </aside>
-    </section>
+<main class="wrap">
+  <div class="top">
+    <div><div class="brand">Be Prepared Content Creator</div><div class="sub">Copy and plan 50 English awareness posts for the 5Q continuity map.</div></div>
+    <div class="top-actions">
+      <a class="btn secondary" href="index.html">Open Be Prepared</a>
+      <button class="btn secondary" onclick="downloadCSV()">Download CSV</button>
+    </div>
+  </div>
 
-    <section class="section-gap">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow">Quick positioning</div>
-          <h2>Use this when posting</h2>
-        </div>
-      </div>
-      <div class="creator-grid">
-        <article class="creator-card">
-          <h3>One-line pitch</h3>
-          <p class="mini-copy" id="pitch">Be Prepared helps the people you trust find important information when they need to step in, without storing passwords, documents, or sensitive contents.</p>
-          <button class="btn small" data-copy="#pitch">Copy</button>
-        </article>
-        <article class="creator-card">
-          <h3>Short bio</h3>
-          <p class="mini-copy" id="bio">Be Prepared is a local-first 5Q continuity map. It helps you record what exists, where it is, who handles it, who else knows, and when it was last checked.</p>
-          <button class="btn small" data-copy="#bio">Copy</button>
-        </article>
-        <article class="creator-card">
-          <h3>Hashtags</h3>
-          <p class="mini-copy" id="hashtags">#Preparedness #FamilyPreparedness #PersonalAdmin #DigitalLife #LifeAdmin #ContinuityPlanning #PrivacyFirst</p>
-          <button class="btn small" data-copy="#hashtags">Copy</button>
-        </article>
-      </div>
-    </section>
+  <section class="panel">
+    <div class="controls">
+      <div><label for="themeFilter">Theme</label><select id="themeFilter" onchange="renderPosts()"><option value="all">All themes</option><option>Emergency awareness</option><option>After a death</option><option>5Q method</option><option>Privacy first</option><option>Family conversations</option><option>Small action</option></select></div>
+      <div><label for="count">Show posts</label><select id="count" onchange="renderPosts()"><option value="5">5</option><option value="10">10</option><option value="25">25</option><option value="50" selected>50</option></select></div>
+      <div><label for="showProcessed">Post status</label><label class="status-toggle"><input id="showProcessed" type="checkbox" onchange="renderPosts()"> Show processed posts too</label></div>
+      <div><label for="startDate">Planning start date</label><input id="startDate" type="date"></div>
+      <div><label for="postsPerDay">Posts per day</label><select id="postsPerDay"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option></select></div>
+      <button class="btn primary" onclick="autoPlan()">Auto-plan visible posts</button>
+    </div>
+    <div class="stats"><span id="postCount"></span><span id="plannedCount"></span><span>Default times: 08:00 - 12:30 - 18:00</span></div>
+    <div class="progress"><strong id="processedCount"></strong><strong id="lastProcessed"></strong><strong id="nextPost"></strong></div>
+    <div class="notice">Copy a post to your social channel. After you have posted or scheduled it, click Processed. This status is stored only in this browser.</div>
+  </section>
 
-    <section class="section-gap">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow">Ready posts</div>
-          <h2>Copy, adjust, post</h2>
-          <p>Best for Threads, LinkedIn, Facebook, or a short email to early testers.</p>
-        </div>
-      </div>
-      <div class="post-grid">
-        <article class="post-card">
-          <div class="post-meta"><span>Launch post</span><span>Soft intro</span></div>
-          <h3>A simple way to start</h3>
-          <p class="post-text" id="post-1">I am testing a small prototype called Be Prepared.
+  <section id="posts" class="grid"></section>
 
-It helps you make a simple 5Q map for important life information:
-
-1. What exists?
-2. Where is it?
-3. Who handles it?
-4. Who else knows?
-5. When was it last checked?
-
-It is not a password manager, not a document vault, and not a medical record. It stores directions, not secrets.
-
-Try it here:
-https://vid567.github.io/be-prepared-browser-beta/</p>
-          <div class="copy-row"><button class="btn small" data-copy="#post-1">Copy post</button></div>
-        </article>
-
-        <article class="post-card">
-          <div class="post-meta"><span>Problem post</span><span>Conversation starter</span></div>
-          <h3>The real question</h3>
-          <p class="post-text" id="post-2">A simple question:
-
-If someone you trust had to help you tomorrow, would they know where to find the important things?
-
-Not the secrets.
-Not the passwords.
-Not the private contents.
-
-Just the directions:
-what exists, where it is, who handles it, who else knows, and when it was last checked.
-
-That is the idea behind Be Prepared:
-https://vid567.github.io/be-prepared-browser-beta/</p>
-          <div class="copy-row"><button class="btn small" data-copy="#post-2">Copy post</button></div>
-        </article>
-
-        <article class="post-card">
-          <div class="post-meta"><span>Privacy post</span><span>Trust angle</span></div>
-          <h3>Directions, not secrets</h3>
-          <p class="post-text" id="post-3">Be Prepared is built around one important rule:
-
-Directions, not secrets.
-
-Do not enter passwords, account numbers, medical details, or documents.
-
-The goal is only to help someone find the right information or the right person when they need to step in.
-
-Everything in this prototype stays in your browser. You can export a backup or print a PDF when you are ready.
-
-https://vid567.github.io/be-prepared-browser-beta/</p>
-          <div class="copy-row"><button class="btn small" data-copy="#post-3">Copy post</button></div>
-        </article>
-
-        <article class="post-card">
-          <div class="post-meta"><span>Founder post</span><span>Personal tone</span></div>
-          <h3>Why I am building it</h3>
-          <p class="post-text" id="post-4">I am building Be Prepared because many families do not need another vault.
-
-They need a simple map.
-
-What exists?
-Where is it?
-Who handles it?
-Who else knows?
-When was it last checked?
-
-That small amount of structure can make it easier for someone trusted to help at the right moment.
-
-Prototype:
-https://vid567.github.io/be-prepared-browser-beta/</p>
-          <div class="copy-row"><button class="btn small" data-copy="#post-4">Copy post</button></div>
-        </article>
-
-        <article class="post-card">
-          <div class="post-meta"><span>Early tester post</span><span>Feedback ask</span></div>
-          <h3>Ask for feedback</h3>
-          <p class="post-text" id="post-5">I am looking for early feedback on Be Prepared.
-
-It is a browser prototype for making a simple 5Q continuity map.
-
-The main test:
-Would people actually create and maintain a map that helps someone else step in?
-
-No account.
-No cloud.
-No sensitive contents.
-
-Try the demo and tell me what feels useful, confusing, or missing:
-https://vid567.github.io/be-prepared-browser-beta/</p>
-          <div class="copy-row"><button class="btn small" data-copy="#post-5">Copy post</button></div>
-        </article>
-
-        <article class="post-card">
-          <div class="post-meta"><span>Short post</span><span>Very quick</span></div>
-          <h3>One-minute version</h3>
-          <p class="post-text" id="post-6">New prototype: Be Prepared.
-
-A simple 5Q map so trusted people can find important information when they need to step in.
-
-Directions, not secrets.
-No passwords. No documents. No account.
-
-Try it:
-https://vid567.github.io/be-prepared-browser-beta/</p>
-          <div class="copy-row"><button class="btn small" data-copy="#post-6">Copy post</button></div>
-        </article>
-      </div>
-    </section>
-  </main>
-  <div id="toast" role="status" aria-live="polite"></div>
-  <script>
-    function textFor(selector){
-      var node=document.querySelector(selector);
-      return node ? node.textContent.trim() : "";
-    }
-    function toast(message){
-      var box=document.querySelector("#toast");
-      box.textContent=message;
-      box.classList.add("show");
-      setTimeout(function(){box.classList.remove("show")},1800);
-    }
-    document.addEventListener("click",function(event){
-      var button=event.target.closest("[data-copy]");
-      if(!button)return;
-      var text=textFor(button.dataset.copy);
-      navigator.clipboard.writeText(text).then(function(){toast("Copied.")},function(){toast("Copy failed.")});
-    });
-  </script>
+  <section class="panel planner">
+    <div class="card-head"><h2 style="margin:0;font-size:20px">Planner</h2><button class="btn ghost danger" onclick="clearPlan()">Clear plan</button></div>
+    <div id="planner"></div>
+  </section>
+</main>
+<div id="toast" class="toast">Copied</div>
+<script>
+const link='https://vid567.github.io/be-prepared-browser-beta/';
+const rawPosts=[
+{theme:'Emergency awareness',hook:'If you were in the hospital tonight, who would know where to look?',body:'Not for passwords.\nNot for private documents.\n\nJust the directions:\nwhere the key information is kept,\nwho handles it,\nand who else knows.\n\nThat is the kind of map Be Prepared helps you build.'},
+{theme:'Emergency awareness',hook:'Emergencies do not wait for your folders to be organized.',body:'Most people have important information somewhere.\nThe problem is that nobody else knows where somewhere is.\n\nBe Prepared helps you turn "somewhere" into a simple 5Q map.'},
+{theme:'Emergency awareness',hook:'A trusted person can only help with what they can find.',body:'That sounds obvious.\nBut in real life, important information is often spread across drawers, phones, emails and memory.\n\nBe Prepared helps you leave clear directions without storing the sensitive contents.'},
+{theme:'Emergency awareness',hook:'The hardest moment to explain where things are is during the crisis.',body:'Do the explaining before it is needed.\n\nWhat exists?\nWhere is it?\nWho handles it?\nWho else knows?\nWhen was it last checked?\n\nThat is the 5Q map.'},
+{theme:'Emergency awareness',hook:'Your family may not need your passwords first.',body:'They may need to know:\n\nwhere insurance information is kept,\nwho handles the home,\nwhich person to call,\nand what has already been arranged.\n\nDirections first. Secrets elsewhere.'},
+{theme:'Emergency awareness',hook:'A good emergency plan is not always dramatic.',body:'Sometimes it is a clear note that says:\n\n"The home insurance folder is in the desk drawer.\nAlex at Oak Insurance handles it.\nSarah also knows."\n\nThat small direction can matter.'},
+{theme:'Emergency awareness',hook:'Could someone step in for one week?',body:'If you could not manage your household for a short time, would someone know the basics?\n\nBills.\nInsurance.\nKeys.\nPets.\nImportant contacts.\n\nBe Prepared helps you map the directions.'},
+{theme:'Emergency awareness',hook:'Preparedness is not fear.',body:'It is kindness for the people who may have to help.\n\nA simple map can reduce guessing at exactly the moment when guessing feels heavy.'},
+{theme:'Emergency awareness',hook:'Most people are one question away from a better plan.',body:'Where would someone start if you could not explain anything?\n\nIf the answer is "I am not sure", that is not failure.\nIt is the perfect first item for a 5Q map.'},
+{theme:'Emergency awareness',hook:'When life gets messy, clarity helps.',body:'Be Prepared is a small browser prototype for mapping important information.\n\nIt stores directions, not secrets.\nNo account.\nNo cloud.\nNo document vault.\n\nTry it and see what is missing from your own map.'},
+{theme:'After a death',hook:'After someone dies, families often search before they can grieve.',body:'Where are the documents?\nWho handles the insurance?\nIs there a person who knows the details?\n\nBe Prepared is built around one simple idea:\nmake the directions easier to find before they are urgently needed.'},
+{theme:'After a death',hook:'A continuity map is not a will.',body:'It does not replace legal advice.\nIt does not store documents.\n\nIt helps trusted people know what exists, where to look, and who may be able to help.'},
+{theme:'After a death',hook:'The people left behind should not have to become detectives.',body:'A drawer here.\nAn email there.\nA name someone half-remembers.\n\nA simple 5Q map can turn confusion into a starting point.'},
+{theme:'After a death',hook:'One of the kindest things you can leave is clarity.',body:'Not every answer.\nNot every document.\nNot every detail.\n\nJust enough direction so the right person knows where to begin.'},
+{theme:'After a death',hook:'Important information does not help if nobody knows it exists.',body:'A policy, a document, an account, a contact.\n\nThe first question is simple:\nDoes it exist?\n\nBe Prepared starts there.'},
+{theme:'After a death',hook:'Family admin gets harder when everyone is guessing.',body:'Who handled the home insurance?\nWhere was the document folder?\nWho else knew about it?\n\nBe Prepared turns those questions into a simple checklist.'},
+{theme:'After a death',hook:'Do not wait for a difficult week to explain everything.',body:'Build a map now.\nKeep sensitive details elsewhere.\nUpdate the map when something changes.\n\nSmall preparation can spare people a lot of searching later.'},
+{theme:'After a death',hook:'There is a difference between storing secrets and showing the way.',body:'Be Prepared is about showing the way.\n\nWhere to look.\nWho to call.\nWhat exists.\nWhen it was last checked.'},
+{theme:'After a death',hook:'A loved one should not need to know your whole life to find the next step.',body:'They need a calm starting point.\n\nBe Prepared helps you create one with five simple questions.'},
+{theme:'After a death',hook:'The best time to make a continuity map is before anyone needs it.',body:'The second best time is today.\n\nStart small:\none person,\none topic,\none important item.'},
+{theme:'5Q method',hook:'The 5Q method is simple on purpose.',body:'1. Does it exist?\n2. Where is it?\n3. Who handles it?\n4. Who else knows?\n5. When was it last checked?\n\nThat is enough to start making important information findable.'},
+{theme:'5Q method',hook:'Completeness is not the same as readiness.',body:'A long note is not useful if the right person still cannot find anything.\n\nBe Prepared scores readiness around handoff:\ncan someone else actually use the direction?'},
+{theme:'5Q method',hook:'Start with what exists.',body:'Do you have home insurance?\nA document folder?\nA trusted contact?\nA person who handles bills?\n\nYou do not need every detail.\nYou need a clear map of what exists.'},
+{theme:'5Q method',hook:'"Where is it?" is more useful than people think.',body:'A safe location hint can save time:\n\n"Blue folder in desk drawer."\n"Contact Alex at the local agency."\n"Digital Life note in printed folder."\n\nNo secrets required.'},
+{theme:'5Q method',hook:'"Who handles it?" is a powerful question.',body:'Sometimes the most important information is not a number or a file.\n\nIt is a person.\n\nName the provider, advisor, family member or friend who knows what to do next.'},
+{theme:'5Q method',hook:'"Who else knows?" turns private organization into shared readiness.',body:'If only one person knows where something is, the plan is fragile.\n\nBe Prepared helps you notice that gap before it matters.'},
+{theme:'5Q method',hook:'"Last checked" keeps the map alive.',body:'Old directions can look organized and still be wrong.\n\nA quick review every 3, 6 or 12 months can keep the map useful.'},
+{theme:'5Q method',hook:'One item can be enough to begin.',body:'Pick something important.\nAnswer the five questions.\nStop.\n\nA useful continuity map is built one clear direction at a time.'},
+{theme:'5Q method',hook:'Your preparedness map should be understandable by someone tired and stressed.',body:'That is the test.\n\nCould they read it quickly?\nCould they find the next step?\nCould they contact the right person?\n\nIf yes, the map is doing its job.'},
+{theme:'5Q method',hook:'Five questions. Less guessing.',body:'Be Prepared is not about collecting more data.\nIt is about reducing uncertainty for the person who may need to help.'},
+{theme:'Privacy first',hook:'Directions, not secrets.',body:'That is the rule behind Be Prepared.\n\nDo not add passwords.\nDo not add account numbers.\nDo not upload documents.\n\nAdd only enough information to help someone find the right place or person.'},
+{theme:'Privacy first',hook:'A continuity map should not become a second risk.',body:'That is why Be Prepared avoids storing sensitive contents.\n\nIt points to information.\nIt does not try to hold everything.'},
+{theme:'Privacy first',hook:'Not a password manager. Not a vault.',body:'Be Prepared has a narrower job:\nhelp trusted people know what exists, where to look, who handles it, and when it was last checked.'},
+{theme:'Privacy first',hook:'Private details belong in the right protected place.',body:'Be Prepared helps someone find that place.\n\nThe app itself is for safe directions and contact names, not secret contents.'},
+{theme:'Privacy first',hook:'No account. No cloud. No external tracking.',body:'The Browser Beta stores your map locally in your browser.\n\nExport a backup or print a PDF when you want a copy.\n\nThe prototype is intentionally simple.'},
+{theme:'Privacy first',hook:'Preparedness does not require oversharing.',body:'You can help someone step in without handing them every private detail today.\n\nGive them the map.\nKeep the sensitive contents where they belong.'},
+{theme:'Privacy first',hook:'The goal is findability, not exposure.',body:'A good direction says enough to help.\nIt does not say more than it should.\n\nThat balance is what Be Prepared is testing.'},
+{theme:'Privacy first',hook:'If a note feels too sensitive, it probably belongs somewhere else.',body:'Use Be Prepared for the pointer:\nwhere to look,\nwho to call,\nand who else knows.\n\nKeep the secret out of the map.'},
+{theme:'Privacy first',hook:'Simple can be safer.',body:'Be Prepared does not try to become your bank database, medical record or legal file.\n\nIt helps you make the important things findable.'},
+{theme:'Privacy first',hook:'A printed map can be useful. Store it carefully.',body:'Be Prepared lets you print or save a PDF.\n\nThat copy may contain names and location hints, so treat it as a practical household document.'},
+{theme:'Family conversations',hook:'A simple question for your family:',body:'If something happened tomorrow, where would we find the important information?\n\nNot the passwords.\nNot the private contents.\n\nJust the starting points.'},
+{theme:'Family conversations',hook:'Preparedness is easier when it is a conversation, not a crisis.',body:'Ask:\nWhat would you need to know if you had to help me?\n\nThen turn the answers into a 5Q map.'},
+{theme:'Family conversations',hook:'Do not make someone guess your system.',body:'If your setup makes perfect sense only to you, it may not help under pressure.\n\nWrite directions for the person who has to step in.'},
+{theme:'Family conversations',hook:'A trusted contact is not useful if they do not know they are trusted.',body:'Be Prepared helps you think about who else knows.\n\nThat question can open the conversation before it becomes urgent.'},
+{theme:'Family conversations',hook:'Family preparedness does not have to be heavy.',body:'Start with one calm conversation.\nOne topic.\nOne safe direction.\n\nThat is progress.'},
+{theme:'Small action',hook:'Try this today: map one thing.',body:'Choose one item:\nhome insurance,\nspare keys,\nimportant documents,\nor a bill someone might need to handle.\n\nAnswer the five questions.\nThat is a real start.'},
+{theme:'Small action',hook:'Five minutes can reduce a lot of future guessing.',body:'Open Be Prepared.\nLoad the demo.\nThen add one real item when you are ready.\n\nSmall maps become useful maps.'},
+{theme:'Small action',hook:'The first version does not need to be perfect.',body:'A rough location hint is better than silence.\nA named contact is better than memory.\nA last-checked date is better than an assumption.'},
+{theme:'Small action',hook:'One map. Five questions. Less stress later.',body:'Be Prepared is a small prototype for a big everyday problem:\nimportant information is often hard to find when someone else needs it.'},
+{theme:'Small action',hook:'If you have ever said "they would know where to look"... check that.',body:'Would they really?\n\nCould they find it without calling you?\nWould the direction still be current?\nWho else knows?\n\nThat is what Be Prepared helps test.'}
+];
+const posts=rawPosts.map((p,i)=>({id:i+1,theme:p.theme,hook:p.hook,body:p.body,text:`${p.hook}\n\n${p.body}\n\nTry Be Prepared free:\n${link}\n\nI would love your feedback.`}));
+let plan=JSON.parse(localStorage.getItem('bePreparedContentPlan')||'{}');
+let processed=JSON.parse(localStorage.getItem('bePreparedContentProcessedV1')||'{}');
+function visiblePosts(){const theme=document.getElementById('themeFilter').value,count=Number(document.getElementById('count').value),showProcessed=document.getElementById('showProcessed').checked;return posts.filter(p=>(theme==='all'||p.theme===theme)&&(showProcessed||!processed[p.id])).slice(0,count)}
+function renderPosts(){const list=visiblePosts();document.getElementById('posts').innerHTML=list.map(p=>`<article class="card ${plan[p.id]?'scheduled':''} ${processed[p.id]?'processed':''}"><div class="card-head"><span class="number">Post ${p.id}</span><span class="theme">${escapeHtml(p.theme)}</span></div><div class="post">${escapeHtml(p.text)}</div><div class="actions"><button class="btn primary" onclick="copyPost(${p.id})">Copy</button><button class="btn secondary" onclick="planOne(${p.id})">${plan[p.id]?'Change time':'Plan'}</button>${processed[p.id]?`<button class="btn ghost processed-btn" onclick="toggleProcessed(${p.id})">Processed</button>`:`<button class="btn ghost" onclick="toggleProcessed(${p.id})">Mark processed</button>`}</div></article>`).join('')||'<div class="empty">No posts match this filter.</div>';document.getElementById('postCount').textContent=`${list.length} posts shown`;renderPlanner();renderProgress()}
+function escapeHtml(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}
+async function copyPost(id){await navigator.clipboard.writeText(posts.find(p=>p.id===id).text);if(!processed[id]){processed[id]=new Date().toISOString();localStorage.setItem('bePreparedContentProcessedV1',JSON.stringify(processed));renderPosts()}toast('Copied and marked as processed')}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200)}
+function toggleProcessed(id){if(processed[id])delete processed[id];else processed[id]=new Date().toISOString();localStorage.setItem('bePreparedContentProcessedV1',JSON.stringify(processed));renderPosts();toast(processed[id]?'Marked as processed':'Marked as not processed')}
+function renderProgress(){const done=posts.filter(p=>processed[p.id]);document.getElementById('processedCount').textContent=`${done.length} of ${posts.length} processed`;const last=done.slice().sort((a,b)=>String(processed[b.id]).localeCompare(String(processed[a.id])))[0];document.getElementById('lastProcessed').textContent=last?`Last processed: Post ${last.id}`:'Last processed: none';const next=posts.find(p=>!processed[p.id]);document.getElementById('nextPost').textContent=next?`Next: Post ${next.id}`:'All posts processed'}
+function planOne(id){const value=prompt('Enter date and time (YYYY-MM-DD HH:MM)',plan[id]||'');if(!value)return;plan[id]=value;savePlan();renderPosts()}
+function autoPlan(){const start=document.getElementById('startDate').value;if(!start){alert('Choose a planning start date first.');return}const perDay=Number(document.getElementById('postsPerDay').value),times=['08:00','12:30','18:00'];visiblePosts().forEach((p,index)=>{const day=new Date(start+'T12:00:00');day.setDate(day.getDate()+Math.floor(index/perDay));const y=day.getFullYear(),m=String(day.getMonth()+1).padStart(2,'0'),d=String(day.getDate()).padStart(2,'0');plan[p.id]=`${y}-${m}-${d} ${times[index%perDay]}`});savePlan();renderPosts();toast('Planning created')}
+function savePlan(){localStorage.setItem('bePreparedContentPlan',JSON.stringify(plan))}
+function clearPlan(){if(confirm('Clear the complete content plan?')){plan={};savePlan();renderPosts()}}
+function renderPlanner(){const rows=posts.filter(p=>plan[p.id]).sort((a,b)=>plan[a.id].localeCompare(plan[b.id]));document.getElementById('plannedCount').textContent=`${rows.length} planned`;document.getElementById('planner').innerHTML=rows.length?`<table><thead><tr><th>Date & time</th><th>Post</th><th>Hook</th><th></th></tr></thead><tbody>${rows.map(p=>`<tr><td>${escapeHtml(plan[p.id])}</td><td>${p.id}</td><td>${escapeHtml(p.hook.replaceAll('\n',' / '))}</td><td><button class="btn ghost" onclick="copyPost(${p.id})">Copy</button></td></tr>`).join('')}</tbody></table>`:'<div class="empty">No posts planned yet.</div>'}
+function downloadCSV(){const rows=[['Post','Theme','Hook','Full post','Planned date/time','Processed'],...posts.map(p=>[p.id,p.theme,p.hook,p.text,plan[p.id]||'',processed[p.id]?'Yes':'No'])];const csv=rows.map(r=>r.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(',')).join('\r\n');const blob=new Blob([csv],{type:'text/csv;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='Be-Prepared-50-posts.csv';a.click();URL.revokeObjectURL(a.href)}
+document.getElementById('startDate').value=new Date(Date.now()+86400000).toISOString().slice(0,10);
+renderPosts();
+</script>
 </body>
 </html>
