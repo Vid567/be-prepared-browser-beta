@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#14365e">
+  <title>Be Prepared Content Creator</title>
+  <meta name="description" content="Ready-to-use social posts for Be Prepared, a local-first 5Q continuity map.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .creator-shell{max-width:1180px;margin:auto;padding:44px 28px 90px}
+    .creator-hero{background:linear-gradient(135deg,#102541,#14365e 72%,#245c91);color:white;border-radius:26px;padding:clamp(28px,5vw,54px);display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:end;box-shadow:0 18px 45px rgba(20,54,94,.22)}
+    .creator-hero h1{color:white;font-size:clamp(38px,6vw,68px);max-width:760px}
+    .creator-hero .lead{color:#dbeaf6}
+    .creator-hero a{color:white}
+    .creator-card{background:white;border:1px solid var(--line);border-radius:14px;padding:22px}
+    .creator-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+    .post-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
+    .post-card{background:white;border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px}
+    .post-card h3{font-size:18px}
+    .post-text{white-space:pre-wrap;color:var(--ink);line-height:1.55;background:#f7fafc;border:1px solid var(--line);border-radius:10px;padding:14px;min-height:190px}
+    .post-meta{display:flex;justify-content:space-between;gap:10px;align-items:center;color:var(--muted);font-size:12px}
+    .copy-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
+    .pill-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .pill-list span{background:#eef5fb;color:#14365e;border:1px solid #d2e2ef;border-radius:99px;padding:7px 10px;font-size:12px;font-weight:750}
+    .section-gap{margin-top:42px}
+    .mini-copy{white-space:pre-wrap;line-height:1.55}
+    .toplink{display:inline-flex;align-items:center;gap:8px;color:white;text-decoration:none;font-weight:800;margin-bottom:22px}
+    @media(max-width:900px){.creator-hero,.creator-grid,.post-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="creator-shell">
+    <section class="creator-hero">
+      <div>
+        <a class="toplink" href="index.html">BP Be Prepared</a>
+        <div class="eyebrow light">Content creator</div>
+        <h1>Posts for the 5Q continuity map.</h1>
+        <p class="lead">Use these short posts to introduce Be Prepared: a local-first way to help trusted people find important information without storing secrets.</p>
+        <div class="hero-actions">
+          <a class="btn demo-light" href="index.html">Open prototype</a>
+          <button class="btn primary" data-copy="#main-link">Copy app link</button>
+        </div>
+        <p id="main-link" hidden>https://vid567.github.io/be-prepared-browser-beta/</p>
+      </div>
+      <aside class="creator-card">
+        <h2>Core message</h2>
+        <p class="muted">Be Prepared records directions, not secrets. It uses five questions: what exists, where it is, who handles it, who else knows, and when it was last checked.</p>
+        <div class="pill-list">
+          <span>5Q map</span>
+          <span>Local-first</span>
+          <span>No passwords</span>
+          <span>No document vault</span>
+          <span>Continuity map</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section-gap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Quick positioning</div>
+          <h2>Use this when posting</h2>
+        </div>
+      </div>
+      <div class="creator-grid">
+        <article class="creator-card">
+          <h3>One-line pitch</h3>
+          <p class="mini-copy" id="pitch">Be Prepared helps the people you trust find important information when they need to step in, without storing passwords, documents, or sensitive contents.</p>
+          <button class="btn small" data-copy="#pitch">Copy</button>
+        </article>
+        <article class="creator-card">
+          <h3>Short bio</h3>
+          <p class="mini-copy" id="bio">Be Prepared is a local-first 5Q continuity map. It helps you record what exists, where it is, who handles it, who else knows, and when it was last checked.</p>
+          <button class="btn small" data-copy="#bio">Copy</button>
+        </article>
+        <article class="creator-card">
+          <h3>Hashtags</h3>
+          <p class="mini-copy" id="hashtags">#Preparedness #FamilyPreparedness #PersonalAdmin #DigitalLife #LifeAdmin #ContinuityPlanning #PrivacyFirst</p>
+          <button class="btn small" data-copy="#hashtags">Copy</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-gap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Ready posts</div>
+          <h2>Copy, adjust, post</h2>
+          <p>Best for Threads, LinkedIn, Facebook, or a short email to early testers.</p>
+        </div>
+      </div>
+      <div class="post-grid">
+        <article class="post-card">
+          <div class="post-meta"><span>Launch post</span><span>Soft intro</span></div>
+          <h3>A simple way to start</h3>
+          <p class="post-text" id="post-1">I am testing a small prototype called Be Prepared.
+
+It helps you make a simple 5Q map for important life information:
+
+1. What exists?
+2. Where is it?
+3. Who handles it?
+4. Who else knows?
+5. When was it last checked?
+
+It is not a password manager, not a document vault, and not a medical record. It stores directions, not secrets.
+
+Try it here:
+https://vid567.github.io/be-prepared-browser-beta/</p>
+          <div class="copy-row"><button class="btn small" data-copy="#post-1">Copy post</button></div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-meta"><span>Problem post</span><span>Conversation starter</span></div>
+          <h3>The real question</h3>
+          <p class="post-text" id="post-2">A simple question:
+
+If someone you trust had to help you tomorrow, would they know where to find the important things?
+
+Not the secrets.
+Not the passwords.
+Not the private contents.
+
+Just the directions:
+what exists, where it is, who handles it, who else knows, and when it was last checked.
+
+That is the idea behind Be Prepared:
+https://vid567.github.io/be-prepared-browser-beta/</p>
+          <div class="copy-row"><button class="btn small" data-copy="#post-2">Copy post</button></div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-meta"><span>Privacy post</span><span>Trust angle</span></div>
+          <h3>Directions, not secrets</h3>
+          <p class="post-text" id="post-3">Be Prepared is built around one important rule:
+
+Directions, not secrets.
+
+Do not enter passwords, account numbers, medical details, or documents.
+
+The goal is only to help someone find the right information or the right person when they need to step in.
+
+Everything in this prototype stays in your browser. You can export a backup or print a PDF when you are ready.
+
+https://vid567.github.io/be-prepared-browser-beta/</p>
+          <div class="copy-row"><button class="btn small" data-copy="#post-3">Copy post</button></div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-meta"><span>Founder post</span><span>Personal tone</span></div>
+          <h3>Why I am building it</h3>
+          <p class="post-text" id="post-4">I am building Be Prepared because many families do not need another vault.
+
+They need a simple map.
+
+What exists?
+Where is it?
+Who handles it?
+Who else knows?
+When was it last checked?
+
+That small amount of structure can make it easier for someone trusted to help at the right moment.
+
+Prototype:
+https://vid567.github.io/be-prepared-browser-beta/</p>
+          <div class="copy-row"><button class="btn small" data-copy="#post-4">Copy post</button></div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-meta"><span>Early tester post</span><span>Feedback ask</span></div>
+          <h3>Ask for feedback</h3>
+          <p class="post-text" id="post-5">I am looking for early feedback on Be Prepared.
+
+It is a browser prototype for making a simple 5Q continuity map.
+
+The main test:
+Would people actually create and maintain a map that helps someone else step in?
+
+No account.
+No cloud.
+No sensitive contents.
+
+Try the demo and tell me what feels useful, confusing, or missing:
+https://vid567.github.io/be-prepared-browser-beta/</p>
+          <div class="copy-row"><button class="btn small" data-copy="#post-5">Copy post</button></div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-meta"><span>Short post</span><span>Very quick</span></div>
+          <h3>One-minute version</h3>
+          <p class="post-text" id="post-6">New prototype: Be Prepared.
+
+A simple 5Q map so trusted people can find important information when they need to step in.
+
+Directions, not secrets.
+No passwords. No documents. No account.
+
+Try it:
+https://vid567.github.io/be-prepared-browser-beta/</p>
+          <div class="copy-row"><button class="btn small" data-copy="#post-6">Copy post</button></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script>
+    function textFor(selector){
+      var node=document.querySelector(selector);
+      return node ? node.textContent.trim() : "";
+    }
+    function toast(message){
+      var box=document.querySelector("#toast");
+      box.textContent=message;
+      box.classList.add("show");
+      setTimeout(function(){box.classList.remove("show")},1800);
+    }
+    document.addEventListener("click",function(event){
+      var button=event.target.closest("[data-copy]");
+      if(!button)return;
+      var text=textFor(button.dataset.copy);
+      navigator.clipboard.writeText(text).then(function(){toast("Copied.")},function(){toast("Copy failed.")});
+    });
+  </script>
+</body>
+</html>
